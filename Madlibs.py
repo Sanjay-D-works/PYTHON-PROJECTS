@@ -12,3 +12,11 @@ matlabs = f"Computer programming is so {adj}! It makes me so exicted all the tim
 print(matlabs)
 
 
+#This is Second method using Modules.
+
+from sample_madlibs import hp, code, zombie, hugergames
+import random
+
+if __name__ == "__main__":
+    m = random.choice([hp, code, zombie, hugergames]) 
+    m.matlib()
