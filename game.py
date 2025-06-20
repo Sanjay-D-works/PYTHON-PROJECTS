@@ -22,7 +22,16 @@ class TicTacToc:
     def empty_squares(self):
         return ' ' in self.board
     
-    def num_
+    def num_empty_squares(self):
+        return self.board.count(' ')
+    
+    def make_move(self, square, letter):
+        if self.board[square] == ' ':
+            self.board[square] = letter
+            if self.wimmer(square, letter):
+                self.current_winner = letter
+            return True
+        return False
        
 
 def play(game, x_player, o_player , print_game=True):
@@ -32,4 +41,29 @@ def play(game, x_player, o_player , print_game=True):
     letter = 'X' #strating letter
     # iterate while the game still has empty square 
     while game.empty_squares():
-        pass
+        if letter == 'O':
+            square = o_player.get_move(game)
+        else:
+            square = x_player.get_move(game)
+
+
+        if game.make_move(square, letter):
+            if print_game:
+                print(letter + f'makes a move to square {square}')
+                game.print_board()
+                print(' ')
+
+            if game.current_winner:
+                if print_game:
+                    print(letter + ' wins!')
+                return letter
+
+            letter = 'O' if letter == 'X' else 'X'
+            if letter == 'X':
+                letter = 'O'
+            else:
+                letter = 'X'
+
+
+        if print_game:
+            print('It\'s a tie')
