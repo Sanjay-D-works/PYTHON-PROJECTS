@@ -18,33 +18,47 @@ A collection of beginner-friendly Python mini-games and logic-based projects to 
 ⚙️ How to Run
 
 Clone the repository:
-git clone https://github.com/Sanjay-D-works/PYTHON-PROJECTS.git
+
+git clone https://github.com/Sanjay-D-works/PYTHON-PROJECTS.git 
+
 Navigate to the project directory:
+
 cd PYTHON-PROJECTS/Part-1
+
 Run any project:
+
 python3 <project_file>.py
 
 
 🧰 Tools & Concepts Used
 
 Python 3.10+
+
 Conditional Logic & Loops
+
 String Manipulation
+
 Functions and Input Handling
+
 Random Module
 
 
 📌 Goals
 
 ✅ Build fundamental Python logic
+
 ✅ Practice with real-world examples
+
 ✅ Improve problem-solving skills
+
 ✅ Create a solid foundation for OOP and advanced projects
 
 
 👋 Let’s Connect
 
 🌐 GitHub: Sanjay-D-works
+
 📧 Email: [sanjaydevarajworks@gmail.com]
+
 📫 Feedback or suggestions? Feel free to open an issue or drop a ⭐️!
 
